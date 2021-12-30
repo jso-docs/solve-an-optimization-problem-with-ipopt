@@ -1,7 +1,7 @@
-@def title = "Template"
+@def title = "How to solve a small optimization problem with Ipopt + NLPModels"
 @def showall = true
-@def tags = ["template", "fix-me"]
+@def tags = ["solvers", "ipopt"]
 
-\preamble{AUTHORS}
+\preamble{Abel S. Siqueira}
 
 \literate{/index.jl}
