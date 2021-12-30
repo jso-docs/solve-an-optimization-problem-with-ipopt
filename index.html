@@ -1,0 +1,29 @@
+<!doctype html> <html lang=en  class=has-navbar-fixed-top > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/css/styles.css"> <style> html {font-size: 17px;} .franklin-content {position: relative; padding-left: 8%; padding-right: 5%; line-height: 1.35em;} @media (min-width: 940px) { .franklin-content {width: 100%; margin-left: auto; margin-right: auto;} } @media (max-width: 768px) { .franklin-content {padding-left: 6%; padding-right: 6%;} } </style> <link rel=icon  href="/assets/favicon.png"> <title>Template</title> <script src="/libs/highlight/highlight.pack.js"></script> <script type=module  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> <script> hljs.getLanguage('julia').keywords.custom = 'obj grad hess AbstractNLPModel'; </script> <nav class="navbar is-primary is-fixed-top" role=navigation  aria-label="main navigation"> <div class=navbar-brand > <a class=navbar-item  href="https://jso-docs.github.io"> <img src="/assets/jso.png"> </a> <a role=button  class=navbar-burger  aria-label=menu  aria-expanded=false  data-target=navbarBasicExample > <span aria-hidden=true ></span> <span aria-hidden=true ></span> <span aria-hidden=true ></span> </a> </div> <div id=navbarBasicExample  class=navbar-menu > <div class=navbar-start > <a class=navbar-item  href="/"> Home </a> <a class=navbar-item  href="/tutorials"> Tutorials </a> <div class="navbar-item has-dropdown is-hoverable"> <a class=navbar-link  href="/ecosystems/index.html"> Ecosystems </a> <div class=navbar-dropdown > <a class=navbar-item  href="/ecosystems/linear-algebra"> Linear Algebra </a> <a class=navbar-item  href="/ecosystems/models"> Models </a> <a class=navbar-item  href="/ecosystems/solvers"> Solvers </a> </div> </div> <a class=navbar-item  href="/references"> References </a> <a class=navbar-item  href="/contributing"> Contributing </a> </div> <div class=navbar-end > <div class=navbar-item > </div> </div> </div> </nav> <section class=section > <div class=container > <div class=content ><div class=franklin-content ><h1 id=title ><a href="#title" class=header-anchor >Template</a></h1></p> <div class=author >by AUTHORS</div> <p><img class=badge  src="https://img.shields.io/badge/LinearAlgebra-STDLIB-666?style=flat-square&labelColor=444"> <h1 id=template_for_jso-docs_separate_pages ><a href="#template_for_jso-docs_separate_pages" class=header-anchor >Template for jso-docs separate pages</a></h1> <div class=franklin-toc ><ol><li><a href="#testing">Testing</a></ol></div> <p>Modify this file</p> <h2 id=testing ><a href="#testing" class=header-anchor >Testing</a></h2> <p>Testing</p> <pre><code class=language-julia >A &#61; rand&#40;5, 5&#41;
+b &#61; A * ones&#40;5&#41;
+x &#61; A \ b</code></pre><pre><code class="plaintext code-output">5-element Vector{Float64}:
+ 1.0
+ 0.9999999999999996
+ 0.9999999999999998
+ 1.0000000000000007
+ 0.9999999999999999</code></pre> <p>Testing</p> <pre><code class=language-julia >using LinearAlgebra
+norm&#40;A * x - b&#41;, norm&#40;x .- 1&#41;</code></pre><pre><code class="plaintext code-output">(2.220446049250313e-16, 8.3820000221454525e-16)</code></pre>
+
+</div>
+    </div>  
+    </div>  
+    </div>  
+  </section>  
+
+    
+    
+        
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+    <footer class=footer >
+      <div class="content has-text-centered is-small">
+        &copy; Abel Soares Siqueira. <br>
+        Last modified: December 30, 2021.<br>
+        <a ckass=link  href="https://github.com/jso-docs/">jso-docs at GitHub</a>
+      </div>
+    </footer>
