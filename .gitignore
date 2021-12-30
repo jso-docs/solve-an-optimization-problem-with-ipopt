@@ -1,0 +1,16 @@
+__site/
+_css
+_ignore
+_layout
+_libs
+_rss
+_assets
+_sass
+config.md
+utils.jl
+.DS_Store
+franklin
+franklin.pub
+node_modules/
+package.json
+package-lock.json
