@@ -1,0 +1,4 @@
+Sitemap: https://tutorial-template.netlify.app/previews/PR4/sitemap.xml
+
+User-agent: *
+Disallow:
