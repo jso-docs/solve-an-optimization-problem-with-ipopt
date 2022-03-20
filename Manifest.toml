@@ -263,15 +263,15 @@ version = "2.13.0"
 
 [[deps.LiveServer]]
 deps = ["Crayons", "FileWatching", "HTTP", "Pkg", "Sockets", "Test"]
-git-tree-sha1 = "3c04368686c010fd6cb7b9a2d871b68457de244c"
+git-tree-sha1 = "707f77cd832ed02fddcf5b914dbab70cbf0e463b"
 uuid = "16fef848-5104-11e9-1b77-fb7a48bbb589"
-version = "0.7.3"
+version = "0.7.4"
 
 [[deps.LogExpFunctions]]
 deps = ["ChainRulesCore", "ChangesOfVariables", "DocStringExtensions", "InverseFunctions", "IrrationalConstants", "LinearAlgebra"]
-git-tree-sha1 = "db0eee9b3bb2b38ab2d94349a3b0272d0a68e21f"
+git-tree-sha1 = "58f25e56b706f95125dcb796f39e1fb01d913a71"
 uuid = "2ab3a3ac-af41-5b50-aa03-7779005ae688"
-version = "0.3.8"
+version = "0.3.10"
 
 [[deps.Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
@@ -452,9 +452,9 @@ version = "2.1.4"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "Random", "Statistics"]
-git-tree-sha1 = "74fb527333e72ada2dd9ef77d98e4991fb185f04"
+git-tree-sha1 = "6976fab022fea2ffea3d945159317556e5dad87c"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.4.1"
+version = "1.4.2"
 
 [[deps.Statistics]]
 deps = ["LinearAlgebra", "SparseArrays"]
