@@ -20,7 +20,7 @@ $beige-lighter: #EFF0EB;
 $family-sans-serif: "Inter", sans-serif;
 $family-code: "JuliaMono", monospace;
 $primary: $julia-blue;
-$link: darken($julia-green, 20%);
+$link: $julia-green;
 $info: $julia-purple;
 $danger: $julia-red;
 $success: $julia-green;
@@ -134,6 +134,7 @@ pre {
   border-left: 2px solid black;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 15px;
   transition: 400ms;
   &:hover {
     border-left: 2px solid $primary;
