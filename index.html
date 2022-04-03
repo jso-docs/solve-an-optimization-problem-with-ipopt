@@ -8,7 +8,7 @@ nlp &#61; ADNLPModel&#40;
   x -&gt; &#91;x&#91;1&#93;^2 &#43; x&#91;2&#93;^2&#93;, # constraints function - must be an array
   &#91;-Inf&#93;, # lower bounds on constraints
   &#91;1.0&#93;   # upper bounds on constraints
-&#41;</code></pre><pre><code class="plaintext code-output">ADNLPModel - Model with automatic differentiation backend ADNLPModels.ForwardDiffAD{ForwardDiff.GradientConfig{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}}}}(3, 2, ForwardDiff.GradientConfig{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}}}((Partials(1.0, 0.0), Partials(0.0, 1.0)), ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}[Dual{ForwardDiff.Tag{var"#1#3", Float64}}(0.0,6.92612977672895e-310,6.92613876532216e-310), Dual{ForwardDiff.Tag{var"#1#3", Float64}}(0.0,6.92612977672895e-310,6.9261297547142e-310)]))
+&#41;</code></pre><pre><code class="plaintext code-output">ADNLPModel - Model with automatic differentiation backend ADNLPModels.ForwardDiffAD{ForwardDiff.GradientConfig{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}}}}(3, 2, ForwardDiff.GradientConfig{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}}}((Partials(1.0, 0.0), Partials(0.0, 1.0)), ForwardDiff.Dual{ForwardDiff.Tag{var"#1#3", Float64}, Float64, 2}[Dual{ForwardDiff.Tag{var"#1#3", Float64}}(0.0,6.91627635576406e-310,6.9162763337493e-310), Dual{ForwardDiff.Tag{var"#1#3", Float64}}(0.0,6.91627635576406e-310,6.9162763337493e-310)]))
   Problem name: Generic
    All variables: ████████████████████ 2      All constraints: ████████████████████ 1     
             free: ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ 0                 free: ⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅⋅ 0     
@@ -82,8 +82,8 @@ Number of inequality constraint evaluations          = 8
 Number of equality constraint Jacobian evaluations   = 0
 Number of inequality constraint Jacobian evaluations = 8
 Number of Lagrangian Hessian evaluations             = 7
-Total CPU secs in IPOPT (w/o function evaluations)   =      2.787
-Total CPU secs in NLP function evaluations           =      1.064
+Total CPU secs in IPOPT (w/o function evaluations)   =      2.740
+Total CPU secs in NLP function evaluations           =      1.156
 
 EXIT: Optimal Solution Found.
 "Execution stats: first-order stationary"</code></pre> <p>To remove the output, use print_level</p> <pre><code class=language-julia >output &#61; ipopt&#40;nlp, print_level&#61;0&#41;</code></pre><pre><code class="plaintext code-output">"Execution stats: first-order stationary"</code></pre>
@@ -100,7 +100,7 @@ EXIT: Optimal Solution Found.
   iterations: 7
   elapsed time: 0.004
   solver specific:
-    real_time: 0.004199981689453125
+    real_time: 0.004299163818359375
     internal_msg: :Solve_Succeeded
 </code></pre>
 <pre><code class=language-julia >x &#61; output.solution
@@ -183,7 +183,7 @@ println&#40;&quot;Solution: &#36;x&quot;&#41;</code></pre><pre><code class="plai
     <footer class=footer >
       <div class="content has-text-centered is-small">
         &copy; Abel Soares Siqueira. <br>
-        Last modified: March 27, 2022.<br>
+        Last modified: April 03, 2022.<br>
         <a ckass=link  href="https://github.com/jso-docs/">jso-docs at GitHub</a>
       </div>
     </footer>
