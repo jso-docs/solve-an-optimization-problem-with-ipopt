@@ -1,0 +1,4 @@
+Sitemap: https://solve-an-optimization-problem-with-ipopt.netlify.app/previews/PR7/sitemap.xml
+
+User-agent: *
+Disallow:
