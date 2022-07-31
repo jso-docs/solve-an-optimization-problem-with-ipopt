@@ -1,5 +1,6 @@
 const tutorialInput = document.getElementById('tutorial-input');
 const tutorialsOutput = document.getElementById('tutorials-output');
+const prepath = document.getElementById('prepath').textContent;
 
 active_tag = '';
 
@@ -21,7 +22,17 @@ function format_tutorial(t) {
     pkgs += format_pkg(pkg)
   }
 
-  link = `https://jso-docs.github.io/${t.repo}`
+  link = t.link
+  // link can be internal (/etc) or external (http://some.lnk)
+  // prepath can be "" (local and gh-pages) or "preview/PRXX" (preview)
+  // if the link is internal and it is a preview mode, we have to fix it adding a / before
+  const isInternal = t.link.slice(0,4) != 'http'
+  const hasPrepath = prepath != ""
+  if (hasPrepath && isInternal) {
+    link = '/' + prepath + link
+  }
+  console.log(link)
+  console.log(t.link)
   return `<div class="news-item">
     <a href="${link}">
       <span class="is-size-4 has-text-primary">${t.title}</span>
